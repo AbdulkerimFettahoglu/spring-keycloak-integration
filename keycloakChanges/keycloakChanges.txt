@@ -1,0 +1,2 @@
+Keycloak tarafında yapılanlar:
+1 - "new-realm" isminde bir realm oluşturuldu.
