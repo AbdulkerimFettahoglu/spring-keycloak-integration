@@ -1,2 +1,7 @@
 Keycloak tarafında yapılanlar:
 1 - "new-realm" isminde bir realm oluşturuldu.
+2 - "new-client" isminde bir client oluşturuldu.
+3 - "new-user" isminde bir user oluşturuldu.
+4 - "new-user" için şifre oluşturuldu.
+5 - bu işlemler ardından aşağıdaki url adresini kullanarak yenileme ve erişim tokenine erişebildim.
+    http://localhost:8080/realms/new-realm/protocol/openid-connect/token
