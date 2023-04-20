@@ -5,3 +5,4 @@ Keycloak tarafında yapılanlar:
 4 - "new-user" için şifre oluşturuldu.
 5 - bu işlemler ardından aşağıdaki url adresini kullanarak yenileme ve erişim tokenine erişebildim.
     http://localhost:8080/realms/new-realm/protocol/openid-connect/token
+6 - "new-role" oluşturuldu
