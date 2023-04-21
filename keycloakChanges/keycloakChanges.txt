@@ -10,3 +10,14 @@ Keycloak tarafında yapılanlar:
 8 - "SecurityConfig" sınıfı oluşturuldu.
 9 - LDAP tarafındaki admin kullanıcısının konumu öğrenildi.
 9.1 - LDAP' ın konumu ve admin bilgileri doğrultusunda Keycloak ayarları yapıldı.
+9.2 - LDAP kullanıcılarının konumu öğrenildi.
+9.3 - LDAP kullanıcalarının konumu doğrultusunda Keycloak ayarları yapıldı.
+9.4 - Synch denemesi. (hiç bir kullanıcıyı görmedi.)
+9.5 - LDAP kullanıcılarınımızı benzersiz şekilde ifade eden alanın "entryUUID" olduğu görüldü.
+9.6 - LDAP kullanıcılarımınızın "objectClass" değerlerinin "inetOrgPerson (structural),
+organizationalPerson (structural), person (structural), top (abstract)" olduğu görüldü.
+9.7 - Doğru LDAP "objectClass" değerleri Keycloak' a eklendi. "entryUUID" değişikliği yapıldı.
+9.8 - kullanıcı adı olarak "uid" kullanılması daha mantıklı. gerekli ayarlar yapıldı.
+9.9 - "cn" kaldırılıp yerine "uid" eklenince Keycloak LDAP' tan bu alanı çekmemeye başladı. Bu durum
+görüntüdeki hataya sebep oldu.
+9.10 - "cn" alanını ldap' tan getirebilmek için Keycloak üzerinde yeni bir LDAP Mapper tanımlandı.
