@@ -7,3 +7,6 @@ Keycloak tarafında yapılanlar:
     http://localhost:8080/realms/new-realm/protocol/openid-connect/token
 6 - spring uygulamasının oauth ile çalışabilmesi için gerekli bağımlılıklar eklendi.
 7 - gerekli ayarlar "application.properties" dosyasında yapıldı.
+8 - "SecurityConfig" sınıfı oluşturuldu.
+9 - LDAP tarafındaki admin kullanıcısının konumu öğrenildi.
+9.1 - LDAP' ın konumu ve admin bilgileri doğrultusunda Keycloak ayarları yapıldı.
