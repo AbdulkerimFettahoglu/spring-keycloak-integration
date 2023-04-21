@@ -17,7 +17,8 @@ Keycloak tarafında yapılanlar:
 9.6 - LDAP kullanıcılarımınızın "objectClass" değerlerinin "inetOrgPerson (structural),
 organizationalPerson (structural), person (structural), top (abstract)" olduğu görüldü.
 9.7 - Doğru LDAP "objectClass" değerleri Keycloak' a eklendi. "entryUUID" değişikliği yapıldı.
-9.8 - kullanıcı adı olarak "uid" kullanılması daha mantıklı. gerekli ayarlar yapıldı.
+9.8 - kullanıcı adı olarak "uid" kullanılması daha mantıklı. gerekli ayarlar yapıldı. "Username LDAP attribute"
+alanı "uid" olarak ayarlandı.
 9.9 - "cn" kaldırılıp yerine "uid" eklenince Keycloak LDAP' tan bu alanı çekmemeye başladı. Bu durum
 görüntüdeki hataya sebep oldu.
 9.10 - "cn" alanını ldap' tan getirebilmek için Keycloak üzerinde yeni bir LDAP Mapper tanımlandı.
