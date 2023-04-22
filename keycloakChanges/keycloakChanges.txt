@@ -40,3 +40,5 @@ LDAP gruplarını döndüğü görüldü.
 12.1 - SecurityConfig' e "@EnableGlobalMethodSecurity(prePostEnabled = true)" eklendi.
     https://www.baeldung.com/spring-security-method-security
 13 - Repoya yeni bir modül eklenecek ve JWT tokenin servisler arası taşınması sağlanacak.
+13.1 - Kopya bir modül oluşturuldu.
+13.2 - Bu kopya modüle giden isteklere JWT eklemek için bir interceptor yazıldı ve "restTemplate" objesine eklendi.
