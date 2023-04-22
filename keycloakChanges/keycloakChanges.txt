@@ -35,3 +35,4 @@ olduğu görüldü. Bu grubun üyeleri ise "uniquemember" olarak gözüküyor.
 içeriğinden aldığı görüldü.
 11.4 - Client scope içerisindeki "Token Claim Name" kısmı "scope" olarak düzenlendi. WS' in artık
 LDAP gruplarını döndüğü görüldü.
+11.5 - Ekli kod bloğu ile prefix kaldırıldı.
