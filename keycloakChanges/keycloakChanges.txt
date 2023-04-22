@@ -31,3 +31,7 @@ olduğu görüldü. Bu grubun üyeleri ise "uniquemember" olarak gözüküyor.
 11.1 - Keycloak üzerinden client' a ait client scope kullanılarak yeni bir mapper oluşturuldu.
 11.2 - JWT içerisindeki LDAP grup bilgileri. Görüldüğü gibi başlarında "/" işareti var. Bunu gidermek için
 "Full group path" özelliği kapatıldı.
+11.3 - Yeni bir ws yazılıp Spring Security' nin hangi JWT alanından kişi rollerini çektiğine bakıldı. "scope"
+içeriğinden aldığı görüldü.
+11.4 - Client scope içerisindeki "Token Claim Name" kısmı "scope" olarak düzenlendi. WS' in artık
+LDAP gruplarını döndüğü görüldü.
