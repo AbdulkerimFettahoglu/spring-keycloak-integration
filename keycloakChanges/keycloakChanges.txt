@@ -39,3 +39,4 @@ LDAP gruplarını döndüğü görüldü.
 12 - Keycloak taki gruplar üzerinden Function Authorization yapmaya çalışacağız.
 12.1 - SecurityConfig' e "@EnableGlobalMethodSecurity(prePostEnabled = true)" eklendi.
     https://www.baeldung.com/spring-security-method-security
+13 - Repoya yeni bir modül eklenecek ve JWT tokenin servisler arası taşınması sağlanacak.
