@@ -1,5 +1,6 @@
 package dev.kerimfettahoglu.secureapp1.controller;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,6 +28,32 @@ public class CheckController {
         Map<String,Object> info = new HashMap<>();
         info.put("name", principal.getName());
         info.put("authorities", authorities);
+        return info;
+    }
+
+    @PreAuthorize("hasAuthority('HMS Victory')")
+    @GetMapping("victory")
+    public Map<String,Object> victory(JwtAuthenticationToken principal) {
+        Collection<String> authorities = principal.getAuthorities().stream()
+                .map(GrantedAuthority::getAuthority)
+                .collect(Collectors.toList());
+        Map<String,Object> info = new HashMap<>();
+        info.put("name", principal.getName());
+        info.put("authorities", authorities);
+        info.put("result", "victory success");
+        return info;
+    }
+
+    @PreAuthorize("hasAuthority('HMS Anadolu')")
+    @GetMapping("anadolu")
+    public Map<String,Object> anadolu(JwtAuthenticationToken principal) {
+        Collection<String> authorities = principal.getAuthorities().stream()
+                .map(GrantedAuthority::getAuthority)
+                .collect(Collectors.toList());
+        Map<String,Object> info = new HashMap<>();
+        info.put("name", principal.getName());
+        info.put("authorities", authorities);
+        info.put("result", "anadolu success");
         return info;
     }
 }

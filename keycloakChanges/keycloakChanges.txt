@@ -26,7 +26,7 @@ görüntüdeki hataya sebep oldu.
 10.1 - LDAP grubunu oluşturan "objectClass" değerlerinin "groupOfUniqueNames (structural)", "top (abstract)"
 olduğu görüldü. Bu grubun üyeleri ise "uniquemember" olarak gözüküyor.
 10.2 - LDAP' daki grupların bilgileri doğrultusunda Keycloak üzerinde mapper oluşturuldu.
-10.3 - LDAP gruplarının Keycloak' a geldiği görüldü.
+10.3 - LDAP gruplarının Keycloak' a geldiği görüldü. (Manuel synch tetiklemek gerekebilir.)
 11 - Keycloak üzerinden alınan JWT token içeriğinde, kişinin bağlı olduğu grupların gelmediği görüldü.
 11.1 - Keycloak üzerinden client' a ait client scope kullanılarak yeni bir mapper oluşturuldu.
 11.2 - JWT içerisindeki LDAP grup bilgileri. Görüldüğü gibi başlarında "/" işareti var. Bunu gidermek için
@@ -36,3 +36,6 @@ içeriğinden aldığı görüldü.
 11.4 - Client scope içerisindeki "Token Claim Name" kısmı "scope" olarak düzenlendi. WS' in artık
 LDAP gruplarını döndüğü görüldü.
 11.5 - Ekli kod bloğu ile prefix kaldırıldı.
+12 - Keycloak taki gruplar üzerinden Function Authorization yapmaya çalışacağız.
+12.1 - SecurityConfig' e "@EnableGlobalMethodSecurity(prePostEnabled = true)" eklendi.
+    https://www.baeldung.com/spring-security-method-security
