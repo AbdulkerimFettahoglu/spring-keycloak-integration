@@ -22,3 +22,7 @@ alanı "uid" olarak ayarlandı.
 9.9 - "cn" kaldırılıp yerine "uid" eklenince Keycloak LDAP' tan bu alanı çekmemeye başladı. Bu durum
 görüntüdeki hataya sebep oldu.
 9.10 - "cn" alanını ldap' tan getirebilmek için Keycloak üzerinde yeni bir LDAP Mapper tanımlandı.
+10 - LDAP gruplarının role olarak JWT içerisine eklenmeye çalışıcağız.
+10.1 - LDAP grubunu oluşturan "objectClass" değerlerinin "groupOfUniqueNames (structural)", "top (abstract)"
+olduğu görüldü. Bu grubun üyeleri ise "uniquemember" olarak gözüküyor.
+10.2 - LDAP' daki grupların bilgileri doğrultusunda Keycloak üzerinde mapper oluşturuldu.
