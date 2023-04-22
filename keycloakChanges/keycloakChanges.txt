@@ -26,3 +26,8 @@ görüntüdeki hataya sebep oldu.
 10.1 - LDAP grubunu oluşturan "objectClass" değerlerinin "groupOfUniqueNames (structural)", "top (abstract)"
 olduğu görüldü. Bu grubun üyeleri ise "uniquemember" olarak gözüküyor.
 10.2 - LDAP' daki grupların bilgileri doğrultusunda Keycloak üzerinde mapper oluşturuldu.
+10.3 - LDAP gruplarının Keycloak' a geldiği görüldü.
+11 - Keycloak üzerinden alınan JWT token içeriğinde, kişinin bağlı olduğu grupların gelmediği görüldü.
+11.1 - Keycloak üzerinden client' a ait client scope kullanılarak yeni bir mapper oluşturuldu.
+11.2 - JWT içerisindeki LDAP grup bilgileri. Görüldüğü gibi başlarında "/" işareti var. Bunu gidermek için
+"Full group path" özelliği kapatıldı.
